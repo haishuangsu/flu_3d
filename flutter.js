@@ -33,7 +33,7 @@ _flutter.loader = null;
      */
     loadEntrypoint(options) {
       const {
-        entrypointUrl = "http://dzo1g6ty7xjrx.cloudfront.net/f3d/main.dart.js",
+        entrypointUrl = "https://dzo1g6ty7xjrx.cloudfront.net/f3d/main.dart.js",
         serviceWorker,
       } = (options || {});
       return this._loadEntrypoint(entrypointUrl);
