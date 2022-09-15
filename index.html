@@ -15,7 +15,8 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/flu_3d/">
+  <!-- http://dzo1g6ty7xjrx.cloudfront.net/f3d/ -->
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -31,14 +32,11 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>flutter_demo_3d</title>
-  <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2062809603';
-  </script>
+  <!-- <link rel="manifest" href="manifest.json"> -->
+
   <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <script src="flutter.js"></script>
 </head>
 
 <body>
@@ -104,9 +102,9 @@
       // Download main.dart.js
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
+        // serviceWorker: {
+        //   serviceWorkerVersion: serviceWorkerVersion,
+        // }
       }).then(function (engineInitializer) {
         loading.classList.add('main_done');
         return engineInitializer.initializeEngine();
